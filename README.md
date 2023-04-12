@@ -1,8 +1,8 @@
 # PROYECTO-INTEGRADOR
 
-//Diagrama Entidad-Relacion
+Diagrama Entidad-Relacion
+![image](https://user-images.githubusercontent.com/118897737/231444083-5cfe65b9-e0d5-4383-80f9-68de09ee4cf7.png)
 
-//Cambiamos asignatura por Área
 
-//El Área es el curso que hace el proyecto integrador
-![image](https://user-images.githubusercontent.com/118904246/230848345-00165fef-2dfb-4b13-a3eb-667341d9e9cb.png)
+Diagrama de casos de uso
+
