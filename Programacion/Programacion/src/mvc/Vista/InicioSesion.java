@@ -6,9 +6,9 @@ import java.awt.*;
 public class InicioSesion extends JFrame {
 
 	private JPanel panel;
-	private JComboBox<String> alumProfesor;
-	private JPasswordField contrasena;
-	private JButton btnInicioSesion;
+	private JComboBox<String> userTypesComboBox;
+	private JPasswordField passwordField;
+	private JButton loginButton;
 
 	    public InicioSesion() {
 	        // Configuración de la ventana principal
@@ -22,7 +22,7 @@ public class InicioSesion extends JFrame {
 	        panel.setLayout(null);
 
 	        JLabel combolabel = new JLabel("Seleccione su opcion: ");
-	        combolabel.setBounds(55, 38, 138, 25);
+	        combolabel.setBounds(24, 38, 138, 25);
 	        panel.add(combolabel);
 	        
 	        // Creación del modelo de datos para el JComboBox
@@ -31,23 +31,23 @@ public class InicioSesion extends JFrame {
 	        comboBoxModel.addElement("Profesor");
 
 	        // Creación del JComboBox y agregarlo al panel
-	        alumProfesor = new JComboBox<>(comboBoxModel);
-	        alumProfesor.setBounds(218, 38, 100, 25);
-	        panel.add(alumProfesor);
+	        userTypesComboBox = new JComboBox<>(comboBoxModel);
+	        userTypesComboBox.setBounds(195, 38, 100, 25);
+	        panel.add(userTypesComboBox);
 
-	        JLabel passwordLabel = new JLabel("Contraseña:");
-	        passwordLabel.setBounds(55, 73, 80, 25);
+	        JLabel passwordLabel = new JLabel("Numero de expediente:");
+	        passwordLabel.setBounds(24, 73, 138, 25);
 	        panel.add(passwordLabel);
 
 	        // Creación del campo de contraseña
-	        contrasena = new JPasswordField(20);
-	        contrasena.setBounds(150, 73, 190, 25);
-	        panel.add(contrasena);
+	        passwordField = new JPasswordField(20);
+	        passwordField.setBounds(174, 73, 155, 25);
+	        panel.add(passwordField);
 
 	        // Creación del botón de inicio de sesión
-	        btnInicioSesion = new JButton("Iniciar sesión");
-	        btnInicioSesion.setBounds(24, 108, 335, 30);
-	        panel.add(btnInicioSesion);
+	        loginButton = new JButton("Iniciar sesión");
+	        loginButton.setBounds(24, 108, 335, 30);
+	        panel.add(loginButton);
 
 	        // Agregar el panel al contenedor principal
 	        setContentPane(panel);
