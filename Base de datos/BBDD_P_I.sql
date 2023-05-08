@@ -2,6 +2,7 @@
 DROP TABLE IF EXISTS Alumnos;
 DROP TABLE IF EXISTS Proyecto_Integrador;
 DROP TABLE IF EXISTS Area;
+DROP TABLE IF EXISTS Profesores;
 
 CREATE TABLE Area (
   CodAr INT PRIMARY KEY,
@@ -29,6 +30,11 @@ CREATE TABLE Alumnos (
   nombreApellidos VARCHAR(100),
   Proyecto_Integrador_CodProy INT,
   FOREIGN KEY (Proyecto_Integrador_CodProy) REFERENCES Proyecto_Integrador(CodProy)
+);
+
+CREATE TABLE Profesores (
+  codProf VARCHAR(20) PRIMARY KEY,
+  contraseña VARCHAR(20)
 );
 
 -- INSERTAMOS DATOS A LAS TABLAS
@@ -83,3 +89,6 @@ VALUES
 (28,'028', 'Josep SERRANO RAYÓ', 8),
 (29,'029', 'Wei XU', 8),
 (30,'030', 'Guoanqi YIN', 8);
+
+INSERT INTO Profesores (CodProf, contraseña) VALUES
+('profesor','profesor');
