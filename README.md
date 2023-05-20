@@ -6,8 +6,7 @@ Diagrama Entidad-Relacion
 
 
 Diagrama de casos de uso
-
-![WhatsApp Image 2023-04-19 at 20 39 30](https://user-images.githubusercontent.com/118904142/233870251-0ec93c5a-452c-47a0-8adf-97e0ad4e451a.jpeg)
+![image](https://github.com/ElenaSaugar/PROYECTO-INTEGRADOR/assets/118904246/cb9c9b4d-7840-4bdc-bc6e-b791a811aee7)
 
 
 Modelo Relacional
